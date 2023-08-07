@@ -56,8 +56,30 @@ public class Marks{
             System.exit(0);
         } 
 
+        if(sub2.equals(sub1)){
+            System.out.println("Duplicate Subject");
+            System.exit(0);
+        }
+        if(sub3.equals(sub2) | sub3.equals(sub1)){
+            System.out.println("Duplicate Subject");
+            System.exit(0);
+        }
 
         //Marks check
+        if (mark1 < 0 | mark1 > 100){
+            System.out.println("Invalid Marks");
+            System.exit(0);
+        }
         
+        //Total avg and status
+        double total = mark1 + mark2 + mark3;
+        double average  = total /3;
+
+        String Status = average > 75 ? "DP" : average > 65 ? "CP" : average > 55 ? "P" : "F";
+
+        // Print Details
+        
+
+
     }
 }
