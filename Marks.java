@@ -40,7 +40,24 @@ public class Marks{
             System.exit(0);
         }
 
-        //
+        //Age check
+        if(age < 10 && age > 18){
+            System.out.println("Invalid age");
+            System.exit(0);
+        }
+        
+        //Subject Name Check
+        if(!sub1.strip().startsWith("SE-")){
+            System.out.println("Invalid Subject");
+            System.exit(0);
+        }
+        if((sub1.charAt(sub1.length()) >65 & sub1.charAt(sub1.length())< 90)| (sub1.charAt(sub1.length()) >97 & sub1.charAt(sub1.length())< 122) ){
+            System.out.println("Invalid Subject");
+            System.exit(0);
+        } 
 
+
+        //Marks check
+        
     }
 }
