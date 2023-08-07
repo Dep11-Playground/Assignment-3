@@ -32,8 +32,15 @@ public class Marks{
         scanner.nextLine();
 
         //check name input
-        
+        if(name.equals("")){
+            System.out.println("Invalid Name");
+            System.exit(0);
+        }else if(name.startsWith(" ") & name.endsWith(" ")){
+            System.out.println("Invalid Name");
+            System.exit(0);
+        }
 
+        //
 
     }
 }
